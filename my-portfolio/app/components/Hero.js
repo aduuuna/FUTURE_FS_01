@@ -45,15 +45,17 @@ export default function Hero() {
                             >
                                 View My Work
                             </a>
+                            
                             <a 
-                                href="#contact" 
+                                href="/" 
+                                target="_blank"
+                                rel="noopener noreferrer" 
                                 className="px-6 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-700 rounded-md transition-colors"
-                                onClick={(e) => {
-                                e.preventDefault();
-                                document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-                                }}
                             >
-                                Contact Me
+                                Download CV
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
                             </a>
                         </div>
                     </div>
