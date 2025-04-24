@@ -19,7 +19,7 @@ export default function Projects({ projects }) {
       description: "Maternal Support Communication Web Application, is designed to provide thoughtful support, discussion, and case management for expecting mothers, especially in low-resource environments. The application enables interaction via text and voice, ensuring inclusivity and accessibility.",
       image: MaternalImage,
       category: "Web",
-      technologies: ["Next.js", "Firebase", "Material UI", "Gemini API", "Clerk", "Firebase"],
+      technologies: ["Next.js", "Firebase", "Material UI", "Gemini API", "Clerk", "Firebase", "Vercel"],
       demo: "https://devpost-medi-hacks.vercel.app/",
       github: "https://github.com/aduuuna/Devpost-MediHacks"
     },
@@ -40,7 +40,7 @@ export default function Projects({ projects }) {
       description: "A responsive personal portfolio website showcasing skills and projects.",
       image: PortfolioImage,
       category: "Design",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "MongoDB", "Vercel"],
       demo: "/",
       github: "https://github.com/aduuuna/FUTURE_FS_01"
     }, {
@@ -49,7 +49,7 @@ export default function Projects({ projects }) {
       description: "ChatForge is a simple yet powerful chatbot system designed to help businesses enhance customer service by providing fast, always-available support. It addresses common issues like delayed responses and dissatisfied customers, making it an ideal solution for businesses struggling with customer engagement.",
       image: ChatForgeImage,
       category: "In-Progress",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "PostgreSQL", "OpenAI API", "Nodejs"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "PostgreSQL", "OpenAI API", "Nodejs", "Vercel"],
       demo: "https://x.com/ayew_pelle/status/1912370269945053549?s=19",
       github: "https://github.com/aduuuna/ChatForgeAI"
     }
