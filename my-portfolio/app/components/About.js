@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeIcon, BriefcaseIcon, BookOpenIcon, Server, Database, Layout, Smartphone, Bot, Code } from 'lucide-react'
+import { CodeIcon, BriefcaseIcon, Server, Database, Layout, Smartphone, Bot, Code, GitBranch, Users  } from 'lucide-react'
 
 export default function About() {
   // Core programming languages & tools
@@ -11,7 +11,8 @@ export default function About() {
     { name: 'CSS', icon: <Layout size={24} />, level: 90 },
     { name: 'PostgreSQL', icon: <Database size={24} />, level: 90 },
     { name: 'Firebase Firestore', icon: <Database size={24} />, level: 90 },
-    { name: 'Pinecone (RAG)', icon: <Database size={24} />, level: 90 }
+    { name: 'Pinecone (RAG)', icon: <Database size={24} />, level: 90 },
+    { name: 'Git/GitHub', icon: <GitBranch size={24} />, level: 90 }
   ]
 
   // Frameworks & tools
@@ -31,7 +32,6 @@ export default function About() {
     { name: 'LangChain', icon: <Bot size={24} /> },
     { name: 'Docker', icon: <Server size={24} /> },
     { name: 'GraphQL', icon: <Database size={24} /> },
-    { name: 'Supabase', icon: <Database size={24} /> },
     { name: 'CI/CD tools', icon: <CodeIcon size={24} /> }
   ]
 
@@ -85,6 +85,16 @@ export default function About() {
                 <div>
                   <h4 className="font-bold text-gray-800 dark:text-white">Focus</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Software Development</p>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center mr-4">
+                <Users size={24} className="text-green-600 dark:text-green-500" />
+                </div>
+                <div>
+                <h4 className="font-bold text-gray-800 dark:text-white">Collaboration</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Team Projects</p>
                 </div>
               </div>
             </div>
