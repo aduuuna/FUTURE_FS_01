@@ -51,7 +51,7 @@ export default function About() {
               Who I Am
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              I'm a passionate Full Stack Web Developer, AI/ML Engineer, and Software Developer focused on creating intuitive and responsive applications. I combine technical expertise with creative problem-solving to build solutions that make a difference.
+              I&#39;m a passionate Full Stack Web Developer, AI/ML Engineer, and Software Developer focused on creating intuitive and responsive applications. I combine technical expertise with creative problem-solving to build solutions that make a difference.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               My technical journey is driven by continuous learning and innovation. I specialize in building responsive web & mobile applications, API integration, backend systems, RAG implementations, and collaborative development workflows.
@@ -140,7 +140,7 @@ export default function About() {
             {/* Future Skills Section */}
             <div>
               <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-                Technologies I'm Exploring
+                Technologies I&#39;m Exploring
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {futureSkills.map((skill) => (

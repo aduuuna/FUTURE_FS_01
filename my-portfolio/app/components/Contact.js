@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Mail, Phone, MapPin, Send, Twitter, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Twitter, Linkedin, Github, Youtube } from 'lucide-react';
 
 export default function Contact() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -12,24 +12,24 @@ export default function Contact() {
     setSubmitting(true);
     setError(null);
     
-    try {
-      // Example API call - replace with your actual contact API
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
+    // try {
+     
+    //   const response = await fetch('/api/contact', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(data),
+    //   });
       
-      if (!response.ok) throw new Error('Failed to send message');
+    //   if (!response.ok) throw new Error('Failed to send message');
       
-      reset();
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 5000);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setSubmitting(false);
-    }
+    //   reset();
+    //   setSubmitted(true);
+    //   setTimeout(() => setSubmitted(false), 5000);
+    // } catch (err) {
+    //   setError(err.message);
+    // } finally {
+    //   setSubmitting(false);
+    // }
   };
 
   return (
@@ -81,6 +81,15 @@ export default function Contact() {
                         aria-label="GitHub"
                         >
                         <Github size={20} className="text-green-600 dark:text-green-500" />
+                        </a>
+                        <a 
+                        href="https://www.youtube.com/@ayew_pelle" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center hover:bg-green-200 dark:hover:bg-green-800/50 transition-colors"
+                        aria-label="Youtube"
+                        >
+                        <Youtube size={20} className="text-green-600 dark:text-green-500" />
                         </a>
                     </div>
                 </div>
@@ -134,7 +143,7 @@ export default function Contact() {
             {submitted ? (
               <div className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 p-4 rounded-lg mb-6">
                 <p className="font-medium">Thank you for your message!</p>
-                <p className="text-sm mt-1">I'll get back to you as soon as possible.</p>
+                <p className="text-sm mt-1">I&#39;ll get back to you as soon as possible.</p>
               </div>
             ) : error ? (
               <div className="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 p-4 rounded-lg mb-6">

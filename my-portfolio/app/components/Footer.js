@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Twitter, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowUp, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -51,6 +51,15 @@ export default function Footer() {
                 >
                     <Github size={20} />
                 </a>
+                <a 
+                  href="https://www.youtube.com/@ayew_pelle" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-2 bg-gray-800 hover:bg-green-600 rounded-full transition-colors"
+                  aria-label="Youtube"
+                  >
+                  <Youtube size={20} />
+                  </a>
             </div>
             
             <button 

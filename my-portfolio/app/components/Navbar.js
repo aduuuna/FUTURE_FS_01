@@ -8,10 +8,16 @@ import {Menu, X,Moon, Sun} from 'lucide-react';
 export default function Navbar() {
     const [mounted, setMounted] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const {theme, setTheme} = useTheme();
+    const { theme, setTheme } = useTheme();
 
     useEffect(() => setMounted(true), []);
 
+    // debug 
+    useEffect(() => {
+        console.log("Theme changed to:", theme);
+        console.log("Dark class applied:", document.documentElement.classList.contains('dark'));
+    }, [theme]);
+    
     const navLinks = [
         {name: 'Home', href: "#home"},
         {name: 'About', href: "#about"},
@@ -46,7 +52,7 @@ export default function Navbar() {
 
                         {mounted && (
                             <button
-                                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-500 transition-colors"
                                 aria-label="Toggle Dark Mode"
                             >
@@ -60,7 +66,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         {mounted && (
                             <button
-                                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                                 className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
                                 aria-label="Toggle Dark Mode"
                             >

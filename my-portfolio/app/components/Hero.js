@@ -19,10 +19,10 @@ export default function Hero() {
                 <div className="flex flex-col md:flex-row items-center md:justify-between">
                     <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-white leading-tight">
-                            Hello, I'm <span className="text-green-600 dark:text-green-500">Joy Owusu Ansah</span>
+                            Hello, I&#39;m <span className="text-green-600 dark:text-green-500">Joy Owusu Ansah</span>
                         </h1>
                         <div className="mt-4 text-xl md:text-2xl text-gray-600 dark:text-gray-300">
-                            I'm a{' '}
+                            I&#39;m a{' '}
                             <ReactTyped
                             strings={['Full Stack Web Developer', 'AI/ML Engineer', 'Software Developer']}
                             typeSpeed={80}
