@@ -12,28 +12,29 @@ export default function Contact() {
     setSubmitting(true);
     setError(null);
     
-    // try {
-     
-    //   const response = await fetch('/api/contact', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(data),
-    //   });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
       
-    //   if (!response.ok) throw new Error('Failed to send message');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
       
-    //   reset();
-    //   setSubmitted(true);
-    //   setTimeout(() => setSubmitted(false), 5000);
-    // } catch (err) {
-    //   setError(err.message);
-    // } finally {
-    //   setSubmitting(false);
-    // }
+      reset();
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
-    // Contact.js (continued)
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -46,8 +47,6 @@ export default function Contact() {
           </p>
         </div>
         
-        
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
             <div className="md:col-span-1 space-y-6">
