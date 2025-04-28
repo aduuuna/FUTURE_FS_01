@@ -1,9 +1,10 @@
 "use client"
 
-import { useRef } from "react";
+import React,{ useRef } from "react";
 import  {ReactTyped} from "react-typed";
 import Image from "next/image";
 import Profile from "../../public/profile.jpg"
+
 
 
 export default function Hero() {
@@ -47,7 +48,8 @@ export default function Hero() {
                             </a>
                             
                             <a 
-                                href="/" 
+                                href= "/Joy'sCV.pdf"
+                                download
                                 target="_blank"
                                 rel="noopener noreferrer" 
                                 className="px-6 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-700 rounded-md transition-colors"
