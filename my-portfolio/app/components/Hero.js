@@ -51,6 +51,7 @@ export default function Hero() {
                                 href= "/Joy'sCV.pdf"
                                 download
                                 target="_blank"
+                                locale={false}
                                 rel="noopener noreferrer" 
                                 className="px-6 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white border border-gray-300 dark:border-gray-700 rounded-md transition-colors"
                             >
