@@ -25,7 +25,7 @@ A modern, responsive portfolio website built with Next.js, featuring a contact f
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-portfolio-url.vercel.app)
+[Youtube video demo](https://youtu.be/ZLemdCrPpS4)
 
 
 
@@ -96,9 +96,4 @@ This project is [MIT](LICENSE) licensed.
 
 ## 👤 Author
 
-- GitHub: [@aduuuna](https://github.com/aduuuna)
-- LinkedIn: [Joy Owusu Ansah](https://linkedin.com/in/yourprofile)
-
----
-
-⭐️ From [Joy Owusu Ansah](https://github.com/aduuuna)
+- Joy Owusu Ansah
