@@ -6,10 +6,7 @@ module.exports = {
       './components/**/*.{js,ts,jsx,tsx}',
     ],
     darkMode: 'class',
-    // future: {
-    //   // Disable JIT mode which uses LightningCSS
-    //   hoverOnlyWhenSupported: false,
-    // },
+   
     theme: {
       extend: {
         colors: {
