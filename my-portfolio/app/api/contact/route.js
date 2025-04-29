@@ -1,5 +1,6 @@
 import { createClient } from '../../utils/supabase/server'
 import { NextResponse } from 'next/server';
+import { sendMail } from '../../utils/email';
 
 export async function POST(request) {
   // Create a new Supabase client
@@ -8,11 +9,9 @@ export async function POST(request) {
     console.log("Supabase client created successfully");
     
 
-    // Parse the request body
     const body = await request.json();
     const { name, email, subject, message } = body;
-    
-    // Validate required fields
+
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Name, email, and message are required' },
@@ -20,8 +19,7 @@ export async function POST(request) {
       );
     }
 
-    // Insert a new contact submission in the database
-    // Note: Replace 'contact_submissions' with your actual table name
+
     const { data, error } = await supabase
       .from('contact')
       .insert({
@@ -38,6 +36,33 @@ export async function POST(request) {
         { error: 'Failed to submit contact form' },
         { status: 500 }
       );
+    }
+
+    try {
+      await sendMail({
+        to: process.env.NOTIFICATION_EMAIL,
+        subject: `New Contact Form Submission: ${subject || 'No Subject'}`,
+        text: `
+          Name: ${name}
+          Email: ${email}
+          Subject: ${subject || "No Subject"}
+
+          Message:
+          ${message}
+        `,
+        html: `
+        New Contact Form Submission
+        Name: ${name}
+        Email: ${email}
+        Subject: ${subject || 'No Subject'}
+        Message:
+        ${message.replace(/\n/g, '')}
+        `,
+      })
+      console.log('Email notification sent successfully');
+    } catch (emailError) {
+      console.error('Failed to send email notification:', emailError);
+      // Continue with the response even if email fails
     }
 
     // Return success response
