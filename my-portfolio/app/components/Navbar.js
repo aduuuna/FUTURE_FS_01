@@ -50,7 +50,7 @@ export default function Navbar() {
 
                         {/* This code is responsible for theme toggling*/}
 
-                        {mounted && (
+                        {/* {mounted && (
                             <button
                             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                                 className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-500 transition-colors"
@@ -58,7 +58,7 @@ export default function Navbar() {
                             >
                                 {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                             </button>
-                        )}
+                        )} */}
                     </div> 
 
                     {/* This code is responsible for Mobile Menu Button */}

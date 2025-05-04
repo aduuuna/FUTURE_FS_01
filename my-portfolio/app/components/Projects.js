@@ -45,13 +45,14 @@ export default function Projects({ projects }) {
       github: "https://github.com/aduuuna/FUTURE_FS_01"
     }, {
       id: 4,
-      title: "ChatForge",
-      description: "ChatForge is a simple yet powerful chatbot system designed to help businesses enhance customer service by providing fast, always-available support. It addresses common issues like delayed responses and dissatisfied customers, making it an ideal solution for businesses struggling with customer engagement.",
+      title: "WeatherApp",
+      description: "A modern, responsive weather application built with Next.js that provides real-time weather data and forecasts for locations worldwide. The app leverages the WeatherAPI for accurate and up-to-date weather information.",
       image: ChatForgeImage,
-      category: "In-Progress",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "PostgreSQL", "OpenAI API", "Nodejs", "Vercel"],
-      demo: "https://x.com/ayew_pelle/status/1912370269945053549?s=19",
-      github: "https://github.com/aduuuna/ChatForgeAI"
+      category: "Web",
+      technologies: ["Next.js", "Tailwind CSS", "React", "Lucide React", "WeatherAPI", "Local Storage"],
+      demo: "https://future-fs-02-nine.vercel.app/",
+      github: "https://github.com/aduuuna/FUTURE_FS_02"
+      
     }
 
   ];

@@ -22,7 +22,8 @@ export default function About() {
     { name: 'Node.js', icon: <Server size={24} />, level: 75 },
     { name: 'Express.js', icon: <Server size={24} />, level: 90 },
     { name: 'Tailwind CSS', icon: <Layout size={24} />, level: 90 },
-    { name: 'React Native', icon: <Smartphone size={24} />, level: 90 }
+    { name: 'React Native', icon: <Smartphone size={24} />, level: 90 },
+    {name: 'FastAPI', icon: <Server size={24} />, level: 10}
   ]
   
   // Future technologies to explore
@@ -74,7 +75,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800 dark:text-white">Expertise</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">AI/ML Engineering</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Backend Development</p>
                 </div>
               </div>
               
@@ -84,7 +85,7 @@ export default function About() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800 dark:text-white">Focus</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Software Development</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Designing and buildng Software solutions</p>
                 </div>
               </div>
 

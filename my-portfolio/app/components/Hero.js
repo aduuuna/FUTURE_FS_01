@@ -25,7 +25,7 @@ export default function Hero() {
                         <div className="mt-4 text-xl md:text-2xl text-gray-600 dark:text-gray-300">
                             I&#39;m a{' '}
                             <ReactTyped
-                            strings={['Full Stack Web Developer', 'AI/ML Engineer', 'Software Developer']}
+                            strings={[ 'AI/ML Enthusiast', 'Software Engineer (Full Stack | Backend-Focused)']}
                             typeSpeed={80}
                             backSpeed={50}
                             loop
@@ -35,7 +35,7 @@ export default function Hero() {
                         <p className="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-lg mx-auto md:mx-0">  
                             Creating elegant solutions through code and design, focused on building modern, responsive web applications.
                         </p>
-                        <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                        {/* <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
                             <a 
                                 href="#projects" 
                                 className="px-6 py-3 bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 text-white rounded-md transition-colors shadow-md"
@@ -60,7 +60,7 @@ export default function Hero() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                                 </svg>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="w-full md:w-2/5">
