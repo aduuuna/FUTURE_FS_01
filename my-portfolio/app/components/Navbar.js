@@ -64,7 +64,7 @@ export default function Navbar() {
                     {/* This code is responsible for Mobile Menu Button */}
                         
                     <div className="md:hidden flex items-center">
-                        {mounted && (
+                        {/* {mounted && (
                             <button
                             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                                 className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
@@ -72,7 +72,7 @@ export default function Navbar() {
                             >
                                 {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                             </button>
-                        )}
+                        )} */}
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="p-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
